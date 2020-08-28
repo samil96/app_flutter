@@ -9,15 +9,27 @@ class HomePage extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          FloatingActionButton(onPressed: null),
+          FloatingActionButton(
+            onPressed: null,
+            backgroundColor: Colors.cyan,
+            child: Icon(Icons.add),
+            ),
           SizedBox(
             width: 10,
           ),
-          FloatingActionButton(onPressed: null),
+          FloatingActionButton(
+            onPressed: null,
+            backgroundColor: Colors.black,
+            child: Icon(Icons.add_a_photo),
+          ),
           SizedBox(
             width: 10,
           ),
-          FloatingActionButton(onPressed: null),
+          FloatingActionButton(
+            onPressed: null,
+            backgroundColor: Colors.cyan,
+            child: Icon(Icons.remove_moderator),
+            ),
           SizedBox(
             width: 10,
           ),
@@ -43,15 +55,16 @@ class HomePage extends StatelessWidget {
             Icon(Icons.star),
             Icon(Icons.face),
             Icon(Icons.favorite),
-            Icon(Icons.apps),
+            Icon(Icons.add_alarm),
           ],
         ),
         ListTile(
           leading: FlutterLogo(
             size: 50,
+            //colors: Colors.pink,
           ),
           title: Text("Flutter Course Live"),
-          subtitle: Text("96Azul"),
+          subtitle: Text("@96Azul"),
           trailing: Icon(
             Icons.email,
             color: Colors.cyan,
@@ -63,7 +76,7 @@ class HomePage extends StatelessWidget {
           onTap: () {
             print('onTap');
           },
-        )
+        ),
       ]),
     );
   }
